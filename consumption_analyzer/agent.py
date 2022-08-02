@@ -8,16 +8,17 @@ from consumption_analyzer.libs.setup_logging import logger
 
 
 class Agent:
-    def __init__(self, database_in=None, analysis=None, database_out=None):
+    def __init__(self, database_in=None, process=None, database_out=None):
         """
         Initialization of Agent.
         :param database_in: input database client handler
-        :param analysis: analysis method handler
+        :param process: analysis handler
         :param database_out: output database client handler
         """
         self._database_in = database_in
-        self._analysis_method = analysis
+        self._analysis_method = process
         self._database_out = database_out
+
         logger.info("Agent created -> DB IN: {}     Method: {}     DB OUT: {}".
                     format(self._database_in.db_client.__name__,
                            self._analysis_method.method.__name__,
