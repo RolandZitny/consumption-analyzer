@@ -11,8 +11,8 @@ from consumption_analyzer.agent import Agent
 from consumption_analyzer.storage_handler import StorageHandler
 from consumption_analyzer.analysis_handler import AnalysisHandler
 
-from consumption_analyzer.db_clients.influxdb import InfluxDB
-from consumption_analyzer.methods.test import TestAnalysis
+from consumption_analyzer.databases.influxdb import InfluxDB
+from consumption_analyzer.processes.test import TestAnalysis
 
 
 def main():

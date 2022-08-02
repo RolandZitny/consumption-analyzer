@@ -10,7 +10,7 @@ class AnalysisHandler:
     def __init__(self, method):
         """
         Initialize AnalysisHandler with specific type od analysis.
-        :param method: Specific method from methods directory
+        :param method: Specific method from processes directory
         """
         self.method = method
 

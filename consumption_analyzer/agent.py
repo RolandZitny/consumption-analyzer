@@ -4,6 +4,7 @@ The agent must have a database that will be queried for windows of a defined len
 and a database in which the results of the analysis will be stored.
 It is also necessary to define the analysis method that will be performed on the queried data.
 """
+from consumption_analyzer.libs.util import Error
 from consumption_analyzer.libs.setup_logging import logger
 
 
